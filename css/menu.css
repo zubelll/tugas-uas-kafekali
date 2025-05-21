@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer,
+header {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+.content-wrapper {
+  padding-top: 100px;
+}
+
+/* Container card */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+/* Hover efek */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Gambar di dalam card */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Tombol full dan spacing */
+.card-body form {
+  margin-top: auto;
+}
+
+.btn-success,
+.btn-secondary {
+  border-radius: 30px;
+  padding: 10px 0;
+}
+
+/* Responsive grid padding */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 100px;
+  }
+}
